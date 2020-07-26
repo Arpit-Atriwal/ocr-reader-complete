@@ -88,8 +88,8 @@ public final class OcrCaptureActivity extends AppCompatActivity {
         super.onCreate(bundle);
         setContentView(R.layout.ocr_capture);
 
-        preview = (CameraSourcePreview) findViewById(R.id.preview);
-        graphicOverlay = (GraphicOverlay<OcrGraphic>) findViewById(R.id.graphicOverlay);
+        preview = findViewById(R.id.preview);
+        graphicOverlay = findViewById(R.id.graphicOverlay);
 
         // Set good defaults for capturing text.
         boolean autoFocus = true;
